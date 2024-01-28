@@ -55,18 +55,18 @@ class _HomePageState extends State<HomePage> {
                             context,
                             MaterialPageRoute(
                                 builder: (ctx) => DetailsPage(
-                                      id: product.id,
-                                      title: product.title,
-                                      description: product.description,
-                                      price: product.price,
+                                      id: product.id!,
+                                      title: product.title!,
+                                      description: product.description!,
+                                      price: product.price!,
                                       discountPercentage:
-                                          product.discountPercentage,
-                                      rating: product.rating,
-                                      stock: product.stock,
-                                      brand: product.brand,
-                                      category: product.category,
-                                      thumbnail: product.thumbnail,
-                                      images: product.images,
+                                          product.discountPercentage!,
+                                      rating: product.rating!,
+                                      stock: product.stock!,
+                                      brand: product.brand!,
+                                      category: product.category!,
+                                      thumbnail: product.thumbnail!,
+                                      images: product.images!,
                                     )));
                       },
                       title: SizedBox(
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              product.brand,
+                              product.brand!,
                               style: const TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(15),
                                   child: Image.network(
-                                    product.thumbnail,
+                                    product.thumbnail!,
                                     fit: BoxFit.cover,
                                   ),
                                 ),

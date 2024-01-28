@@ -1,15 +1,15 @@
 class ProductsModel {
-  int id;
-  String title;
-  String description;
-  int price;
-  double discountPercentage;
-  num rating;
-  num stock;
-  String brand;
-  String category;
-  String thumbnail;
-  List<dynamic> images;
+  int? id;
+  String? title;
+  String? description;
+  int? price;
+  double? discountPercentage;
+  num? rating;
+  num? stock;
+  String? brand;
+  String? category;
+  String? thumbnail;
+  List<dynamic>? images;
 
   ProductsModel({
     required this.id,
